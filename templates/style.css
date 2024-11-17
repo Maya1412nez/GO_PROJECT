@@ -1,0 +1,42 @@
+@import url('fonts/f1.ttf');
+
+@font-face {
+  font-family: 'font1', serif;
+  src: url('fonts/f1.ttf');
+}
+
+.btn me-2 {
+  background-color: #ffac52;
+  color: #fff;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+  font-family: 'font1', serif;
+}
+
+.b-text {
+  color: black;
+  font-size: 20px;
+  font-family: 'font1', serif;
+}
+
+body.dark_mode {
+  background-image: url('') !important;
+}
+body {
+  background-image: url('') !important;
+}
+
+.text-centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+.cont-centered {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle 
+}
