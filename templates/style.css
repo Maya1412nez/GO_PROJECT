@@ -10,6 +10,7 @@
   color: #fff;
 }
 
+
 p {
   color: black;
   font-size: 20px;
@@ -40,3 +41,20 @@ body {
   display: table-cell;
   vertical-align: middle 
 }
+
+.cent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+img {
+  pointer-events: none;
+}
+
+body.dark_mode {
+  background-image: url('') !important;
+}
+body {
+  background-image: url('') !important;
+}   
