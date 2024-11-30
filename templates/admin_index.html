@@ -21,7 +21,7 @@
             <li><a href="main.html" class="nav-link px-2 link-dark">Главная</a></li>
             <avatarli><a href="about.html" class="nav-link px-2 link-dark">О мероприятии</a></li>
             <li><a href="https://forms.yandex.ru/u/673a44b4c417f3a1f2964792/" class="nav-link px-2 link-dark">Регистрация</a></li>
-            <!-- <li><a href="https://t.me/Mayzick" class="nav-link px-2 link-dark">Контакты</a></li> -->
+            <li><a href="https://t.me/Mayzick" class="nav-link px-2 link-dark">Контакты</a></li>
           </ul>
         </header>
       </div>
@@ -30,8 +30,50 @@
         <div class="row hello">
 
           <div class="col-4">
-            <img src="imgs/racc.jpg" class="img-thumbnail" alt="...">
-          </div>
+
+
+
+
+
+
+
+        <form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+        <legend>HTML File Upload</legend>
+
+        <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+        <div>
+            <label for="fileselect">Files to upload:</label>
+            <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+            <div id="filedrag">or drop files here</div>
+        </div>
+
+        <div id="submitbutton">
+            <button type="submit">Upload Files</button>
+        </div>
+
+        </fieldset>
+
+        </form>
+
+        <div id="messages">
+        <p>Status Messages</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 
           <div class="col-1">
           </div>
@@ -58,7 +100,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="imgs/no_image.jpg" class="d-block w-100" alt="...">
+                    <img src="imgs/1.png" class="d-block w-100" alt="...">
                   </div>
 
                   <div class="carousel-item">
@@ -89,30 +131,30 @@
         <!-- Three columns of text below the carousel -->
         <div class="row ">
 
-          <div class="col cont">
+          <div class="col">
             <img class="avatar cent" src="imgs/chill_guy.jpg" width="140" height="140" alt="За стеклом">
             <div  class="container gx-5">
               <h2>Майя</h2>
-              <a href="#" class="nav-link px-2 link-light">Front Dimyonok</a>
-              <p><a class="btn btn-warning" href="https://t.me/Mayzick">Написать</a></p>
+              <li><a href="#" class="nav-link px-2 link-dark">Front Dimyonok</a></li>
+              <p><a class="btn btn-primary" href="https://t.me/Mayzick">Написать</a></p>
             </div>
           </div>
 
-          <div class="col cont">
+          <div class="col">
               <img class="avatar cent" src="imgs/chill_guy.jpg"  width="140" height="140" alt="За стеклом">
             <div  class="container gx-5">
               <h2>Коля</h2>
-              <a href="#" class="nav-link px-2 link-light">Front Dimyonok</a>
-              <p><a class="btn btn-warning" href="https://t.me/NikolashkaBloody">Написать</a></p>
+              <li><a href="#" class="nav-link px-2 link-dark">Front Dimyonok</a></li>
+              <p><a class="btn btn-primary" href="https://t.me/Mayzick">Написать</a></p>
             </div>
           </div>
 
-          <div class="col cont">
+          <div class="col">
             <img class="avatar cent" src="imgs/chill_guy.jpg" width="140" height="140" alt="За стеклом">
             <div  class="container gx-5">
               <h2>Вова</h2>
-              <a href="#" class="nav-link px-2 link-light">Front Dimyonok</a>
-              <p><a class="btn btn-warning" href="https://t.me/Buka_sp">Написать</a></p>
+              <li><a href="#" class="nav-link px-2 link-dark">Front Dimyonok</a></li>
+              <p><a class="btn btn-primary" href="https://t.me/Mayzick">Написать</a></p>
             </div>
           </div>
     

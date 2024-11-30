@@ -6,27 +6,28 @@
 }
 
 .btn me-2 {
-  background-color: #ffac52;
+  background-color: #f48c0c;
   color: #fff;
 }
 
 
 p {
-  color: black;
+  color: #fff;
   font-size: 20px;
   font-family: 'font1', serif;
 }
 
+* {
+  color: #fff;
+}
+
 .b-text {
-  color: black;
+  color: #fff;
   font-size: 20px;
   font-family: 'font1', serif;
 }
 
 body.dark_mode {
-  background-image: url('') !important;
-}
-body {
   background-image: url('') !important;
 }
 
@@ -56,6 +57,7 @@ body.dark_mode {
 }
 body {
   background-image: url('') !important;
+  background-color: #1c2434;
 }   
 
 .container {
@@ -96,4 +98,18 @@ body {
   margin: 30px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.gx-5 {
+  margin-left: 10%;
+}
+
+.cont {
+  border-radius: 20%;
+  border:#f48c0c;
+
+}
+
+.btn-warning {
+  background-color: #f48c0c;
 }
