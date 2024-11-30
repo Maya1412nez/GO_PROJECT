@@ -7,7 +7,7 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("jnbjknkjfgbvjkr")
+	fmt.Println("ti gnom...")
 	t, err := template.ParseFiles("index.html")
 	if err != nil {
 		fmt.Println("cant'parse files index.html")
@@ -17,6 +17,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func HandleRequest() {
 	http.HandleFunc("/", index)
+	http.Handle("/imgs/", http.StripPrefix("/imgs/", http.FileServer(http.Dir("../imgs"))))
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 	http.ListenAndServe(":5000", nil)
 }
 
