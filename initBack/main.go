@@ -7,7 +7,7 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("ti pidor")
+	fmt.Println("jnbjknkjfgbvjkr")
 	t, err := template.ParseFiles("index.html")
 	if err != nil {
 		fmt.Println("cant'parse files index.html")
