@@ -45,7 +45,6 @@ body {
 .cent {
   margin-left: auto;
   margin-right: auto;
-  width: 6em
 }
 
 img {
@@ -58,3 +57,43 @@ body.dark_mode {
 body {
   background-image: url('') !important;
 }   
+
+.container {
+  margin: 30px;
+  padding: 30px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.col {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+
+
+}
+
+/* .row {
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+} */
+
+.hello {
+  margin-bottom: 5%;
+}
+
+.header {
+  margin: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
