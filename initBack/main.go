@@ -18,11 +18,11 @@ func index(w http.ResponseWriter, r *http.Request) {
 func HandleRequest() {
 	http.HandleFunc("/", index)
 	http.Handle("/imgs/", http.StripPrefix("/imgs/", http.FileServer(http.Dir("../imgs"))))
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
-	http.ListenAndServe(":5000", nil)
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../static"))))
+	http.ListenAndServe(":9000", nil)
 }
 
 func main() {
-	fmt.Printf("initializing back on :5000")
+	fmt.Printf("initializing back on :9000")
 	HandleRequest()
 }
