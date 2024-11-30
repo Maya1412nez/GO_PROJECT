@@ -7,19 +7,20 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("templates/main.html")
+	fmt.Println("ti pidor")
+	t, err := template.ParseFiles("index.html")
 	if err != nil {
-		fmt.Fprintf(w, err.Error())
+		fmt.Println("cant'parse files index.html")
 	}
-	t.ExecuteTemplate(w, "main.html", nil)
+	t.Execute(w, "index.html")
 }
 
 func HandleRequest() {
 	http.HandleFunc("/", index)
-	http.ListenAndServe("127.0.0.1:5000", nil)
+	http.ListenAndServe(":5000", nil)
 }
 
 func main() {
-	fmt.Printf("initializing back on 127.0.0.1:5000")
+	fmt.Printf("initializing back on :5000")
 	HandleRequest()
 }
