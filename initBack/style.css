@@ -1,0 +1,99 @@
+@import url('fonts/f1.ttf');
+
+@font-face {
+  font-family: 'font1', serif;
+  src: url('fonts/f1.ttf');
+}
+
+.btn me-2 {
+  background-color: #ffac52;
+  color: #fff;
+}
+
+
+p {
+  color: black;
+  font-size: 20px;
+  font-family: 'font1', serif;
+}
+
+.b-text {
+  color: black;
+  font-size: 20px;
+  font-family: 'font1', serif;
+}
+
+body.dark_mode {
+  background-image: url('') !important;
+}
+body {
+  background-image: url('') !important;
+}
+
+.text-centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+.cont-centered {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle 
+}
+
+.cent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  pointer-events: none;
+}
+
+body.dark_mode {
+  background-image: url('') !important;
+}
+body {
+  background-image: url('') !important;
+}   
+
+.container {
+  margin: 30px;
+  padding: 30px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.col {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+
+
+}
+
+/* .row {
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+} */
+
+.hello {
+  margin-bottom: 5%;
+}
+
+.header {
+  margin: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
