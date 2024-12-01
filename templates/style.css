@@ -14,6 +14,11 @@
 p {
   color: #fff;
   font-size: 20px;
+  font-family: 'fonts/Jura.ttf', serif;
+}
+a {
+  color: #fff;
+  font-size: 20px;
   font-family: 'font1', serif;
 }
 
@@ -112,4 +117,13 @@ body {
 
 .btn-warning {
   background-color: #f48c0c;
+}
+
+.carousel {
+  border-radius: 20%;
+}
+
+.img-thumbnail {
+  background-color: #1c2434;
+  border: #fff;
 }
