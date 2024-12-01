@@ -15,15 +15,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, "index.html")
 }
 
-/*func create(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("ti gnom...")
-	t, err := template.ParseFiles("create.html")
-	if err != nil {
-		fmt.Println("cant'parse files create.html")
-	}
-	t.Execute(w, "create.html")
-}*/
-
 func about(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("ti gnom...")
 	t, err := template.ParseFiles("./about.html")
