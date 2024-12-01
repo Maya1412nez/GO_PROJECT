@@ -24,9 +24,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, "create.html")
 }*/
 
-func info(w http.ResponseWriter, r *http.Request) {
+func about(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("ti gnom...")
-	t, err := template.ParseFiles("about.html")
+	t, err := template.ParseFiles("./about.html")
 	if err != nil {
 		fmt.Println("cant'parse files about.html")
 	}
@@ -35,7 +35,7 @@ func info(w http.ResponseWriter, r *http.Request) {
 
 func HandleRequest() {
 	http.HandleFunc("/", index)
-	http.HandleFunc("/info", info)
+	http.HandleFunc("/about/", about)
 	http.Handle("/imgs/", http.StripPrefix("/imgs/", http.FileServer(http.Dir("../imgs"))))
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../static"))))
 	http.ListenAndServe(":9000", nil)
